@@ -1,4 +1,6 @@
-﻿namespace Leomarqz.Algorithms
+﻿using System;
+
+namespace Leomarqz.Algorithms
 {
     internal class Program
     {

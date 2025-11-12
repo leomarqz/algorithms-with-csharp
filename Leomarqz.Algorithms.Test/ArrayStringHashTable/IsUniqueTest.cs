@@ -1,4 +1,5 @@
 ﻿using Leomarqz.Algorithms.ArrayStringHashTable;
+using System;
 
 namespace Leomarqz.Algorithms.Test.ArrayStringHashTable
 {
@@ -8,33 +9,40 @@ namespace Leomarqz.Algorithms.Test.ArrayStringHashTable
         [TestMethod]
         public void IsUnique_ShouldReturnTrue_ForUniqueCharacters()
         {
-            // Arrange
+            // cadena de caracteres unica
             string input = "abcdefg"; //true
-            // Act
+
+            // accion
             bool result = Unique.IsUnique(str: input);
-            // Assert
+
+            // Verificacion
             Assert.IsTrue(result);
         }
 
         [TestMethod]
         public void IsUnique_ShouldReturnFalse_ForNonUniqueCharacters()
         {
-            // Arrange
+            // cadena de caracteres no unica
             string input = "hello"; //false
-            // Act
+
+            // accion
             bool result = Unique.IsUnique(str: input);
-            // Assert
+
+            // Verificacion
             Assert.IsFalse(result);
         }
 
-        //fail
+        //test sobre fallo
         [TestMethod]
         public void IsUnique_ShouldThrowArgumentException_ForEmptyString()
         {
+            // Se lanzo una excepcion ?
             bool thrown = false;
-            // Arrange
+
+            // cadena de caracteres vacia
             string input = ""; // Exception
-            // Act & Assert
+
+            // accion
             try
             {
                 Unique.IsUnique(str: input);
@@ -43,6 +51,7 @@ namespace Leomarqz.Algorithms.Test.ArrayStringHashTable
             {
                 thrown = true;
             }
+            // Verificacion
             Assert.IsTrue(thrown);
         }
 

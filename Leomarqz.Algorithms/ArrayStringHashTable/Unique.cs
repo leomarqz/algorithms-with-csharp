@@ -1,5 +1,6 @@
 ﻿
-using System.Collections;
+
+using System;
 using System.Collections.Generic;
 
 namespace Leomarqz.Algorithms.ArrayStringHashTable
