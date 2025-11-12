@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Leomarqz.Algorithms.Test/Leomarqz.Algorithms.Test.csproj" />
+  <Project Path="Leomarqz.Algorithms/Leomarqz.Algorithms.csproj" />
+</Solution>
